@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Access</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loginform">
+        <h2>Welcome Back!</h2>
+        <p>Login into your account</p>
+        <input type="email" id="loginemail" placeholder="Email Address" />
+        <input type="password" id="loginpassword" placeholder="Password" />
+        <button onclick="login()">Log In</button>
+        <p>
+          Don't have an account?
+          <a href="#" onclick="showRegister(event)">Create Account</a>
+        </p>
+      </div>
+      <div id="RegisterForm" style="display: none">
+        <h2>Create Account</h2>
+        <p>Sign up to get started</p>
+        <input type="text" id="registername" placeholder="Full Name" />
+        <input type="email" id="registeremail" placeholder="Email Address" />
+        <input type="password" id="registerpassword" placeholder="Password" />
+        <input
+          type="password"
+          id="confirmpassword"
+          placeholder="Confirm Password"
+        />
+        <button onclick="register()">Register</button>
+        <p>
+          Already have an account?
+          <a href="#" onclick="showLogin(event)">Log In</a>
+        </p>
+      </div>
+      <p id="message"></p>
+    </div>
+  </body>
+</html>

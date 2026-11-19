@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #eaf1f8;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 320px;
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 10px 30px #ccd6e2;
+}
+
+h2 {
+  margin: 0 0 6px;
+  color: #174a7c;
+}
+
+h2 + p {
+  margin: 0 0 20px;
+  color: #777;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  margin: 6px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #174a7c;
+  color: #fff;
+  cursor: pointer;
+}
+
+#loginform p,
+#RegisterForm p {
+  text-align: center;
+}
+
+a {
+  color: #174a7c;
+}
+
+#message {
+  text-align: center;
+  color: red;
+}
